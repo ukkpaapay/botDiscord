@@ -1,4 +1,5 @@
 const {Client,GatewayIntentBits} = require('discord.js');
+require('dotenv').config()
 const client = new Client({ intents :[
   GatewayIntentBits.GuildMembers,
   GatewayIntentBits.GuildMessages,
@@ -16,4 +17,4 @@ client.on('messageCreate', async(message) => {
   //   message.channel.send('Hi hi~~~~~~~');
   // }
 });
-client.login('OTM0Mzg4MzYzNjMxMzk0ODU2.GQhA3l.8hlAoU_tx9EGP7wRd6ngVW0HxCpKh1dcuw5LFI');
+client.login(process.env.ID_KEY);
