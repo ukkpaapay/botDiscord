@@ -14,7 +14,7 @@ client.on("ready", () => {
 });
 client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
-  // console.log(message.attachments.size);
+  console.log(message.content);
   // if (
   //   message.content === "Himari" ||
   //   message.content === "himari" ||
